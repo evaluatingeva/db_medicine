@@ -1,6 +1,8 @@
 # Search System using PostgreSQL
 Click here to see the output of the system: 
+
 Supports:
+
 Prefix search (e.g., Ava → “Avastin”)
 Substring search (e.g., Injection → “… Injection” items)
 Full-text search (e.g., antibiotic)
@@ -33,11 +35,15 @@ psql -U postgres -h localhost -d medicines -c "CREATE EXTENSION IF NOT EXISTS un
     8. then run the application using this -> (uvicorn app.main:app --reload --port 8000)
     9. Now we open the following links:
         -> Swagger UI: http://127.0.0.1:8000/docs
+       
         -> Prefix: http://127.0.0.1:8000/search/prefix?q=Ava
+       
         -> Substr: http://127.0.0.1:8000/search/substring?q=Injection
+       
         -> FTS: http://127.0.0.1:8000/search/fulltext?q=antibiotic
+       
         -> Fuzzy: http://127.0.0.1:8000/search/fuzzy?q=Avastn&threshold=0.25
-    10. Now run the benchmark.py and submission_gen.py files using: 
+    11. Now run the benchmark.py and submission_gen.py files using: 
         python benchmark.py --host 127.0.0.1:8000 > benchmark_results.json
         python submission_gen.py --host 127.0.0.1:8000 --out ../submission.json
     # OUTPUT: Created the benchmark_results.json file with latency and submission.json file with the required results format. (fixed query set)
