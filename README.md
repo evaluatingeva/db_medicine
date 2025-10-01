@@ -47,6 +47,8 @@ Requirements: PostgreSQL, Python 3.10+, Docker desktop
         -> FTS: http://127.0.0.1:8000/search/fulltext?q=antibiotic
        
         -> Fuzzy: http://127.0.0.1:8000/search/fuzzy?q=Avastn&threshold=0.25
+
+        -> Fussy: http://127.0.0.1:8000/search/fussy?q=Avastn&threshold=0.25
     11. Now run the benchmark.py and submission_gen.py files using:
         
         python benchmark.py --host 127.0.0.1:8000 > benchmark_results.json
