@@ -1,0 +1,8 @@
+{
+  "1": { "type": "prefix", "q": "Ava" },
+  "2": { "type": "substring", "q": "Paracetamol" },
+  "3": { "type": "substring", "q": "Injection" },
+  "4": { "type": "fulltext", "q": "antibiotic" },
+  "5": { "type": "fulltext", "q": "pain relief" },
+  "6": { "type": "fuzzy", "q": "Avastn" }
+}
