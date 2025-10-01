@@ -16,15 +16,19 @@ The Repo contains:
 5. Dockerfile.api and docker-compose.yml
 
 Requirements: PostgreSQL, Python 3.10+, Docker desktop
-## Procedure
+# Procedure
 1. Clone the Repo & Include the Dataset in the folder
 2. Create the Database using ubuntu with the following commands:
-psql -U postgres -h localhost -c "CREATE DATABASE medicines;"
-psql -U postgres -h localhost -d medicines -c "CREATE EXTENSION IF NOT EXISTS pg_trgm;"
-psql -U postgres -h localhost -d medicines -c "CREATE EXTENSION IF NOT EXISTS fuzzystrmatch;"
-psql -U postgres -h localhost -d medicines -c "CREATE EXTENSION IF NOT EXISTS unaccent;"
-3. Now add the files and folders in the Clone Repo Folder.
-4. Now using the "wsl Ubuntu commands: 
+   
+    psql -U postgres -h localhost -c "CREATE DATABASE medicines;"
+    
+    psql -U postgres -h localhost -d medicines -c "CREATE EXTENSION IF NOT EXISTS pg_trgm;"
+    
+    psql -U postgres -h localhost -d medicines -c "CREATE EXTENSION IF NOT EXISTS fuzzystrmatch;"
+    
+    psql -U postgres -h localhost -d medicines -c "CREATE EXTENSION IF NOT EXISTS unaccent;"
+4. Now add the files and folders in the Clone Repo Folder.
+5. Now using the "wsl Ubuntu commands: 
     1. Apply the schema
     2. Create the virtual environment (python venv) Activate it and install psycopg[binary] python-dotenv
     3. using export keyword make the connection to the local DB
