@@ -50,6 +50,7 @@ Requirements: PostgreSQL, Python 3.10+, Docker desktop
     11. Now run the benchmark.py and submission_gen.py files using: 
         python benchmark.py --host 127.0.0.1:8000 > benchmark_results.json
         python submission_gen.py --host 127.0.0.1:8000 --out ../submission.json
-    # OUTPUT: Created the benchmark_results.json file with latency and submission.json file with the required results format. (fixed query set)
+    # OUTPUT
+    Created the benchmark_results.json file with latency and submission.json file with the required results format. (fixed query set)
     11. I have build the docker image, enabled teh extensions, applied the schema in the container database, imported teh data in the container database
 So, this is how I successfully implemented the project!
